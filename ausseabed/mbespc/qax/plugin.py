@@ -9,8 +9,8 @@ import geopandas
 
 from hyo2.qax.lib.plugin import QaxCheckToolPlugin, QaxCheckReference, \
     QaxFileType
-from ausseabed.qajson.model import QajsonRoot, QajsonDataLevel, QajsonCheck, \
-    QajsonFile, QajsonInputs, QajsonExecution, QajsonOutputs
+from ausseabed.qajson.model import QajsonRoot, QajsonCheck, \
+    QajsonExecution, QajsonOutputs
 
 from ausseabed.mbespc.lib.density_check import AlgorithmIndependentDensityCheck
 
@@ -146,7 +146,7 @@ class PointCloudChecksQaxPlugin(QaxCheckToolPlugin):
             density_check.run()
 
             execution_details.status = 'completed'
-        except Exception as ex:
+        except Exception:
             execution_details.status = 'failed'
             execution_details.error = traceback.format_exc()
         finally:

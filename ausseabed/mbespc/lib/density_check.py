@@ -5,12 +5,11 @@ Resolution independent density check
 from pathlib import Path
 from typing import Optional
 import tempfile
-import json
 import geopandas
 import shutil
 import logging
 
-from ausseabed.qajson.model import QajsonParam, QajsonOutputs, QajsonExecution
+from ausseabed.qajson.model import QajsonParam
 from ausseabed.mbespc.lib import pdal_pipeline, utils
 
 LOG = logging.getLogger(__name__)

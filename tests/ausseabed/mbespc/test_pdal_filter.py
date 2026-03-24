@@ -1,4 +1,3 @@
-import pytest
 from rasterio.crs import CRS
 
 from ausseabed.mbespc.lib import pdal_filter

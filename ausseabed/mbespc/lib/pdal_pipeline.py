@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import tempfile
-from typing import Tuple, Optional
+from typing import Tuple
 import logging
 
 import numpy
