@@ -13,6 +13,10 @@ dependencies = [
   "geopandas>=0.14.1",
   "laspy",
   "fiona",
+  "rasterio",
+  "pdal",
+  "shapely",
+  "numpy",
 ]
 
 [project.scripts]
