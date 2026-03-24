@@ -11,8 +11,6 @@ dependencies = [
   "Click",
   "ausseabed.qajson",
   "geopandas>=0.14.1",
-  "laspy",
-  "fiona",
   "rasterio",
   "pdal",
   "shapely",
@@ -30,6 +28,12 @@ Repository = "https://github.com/ausseabed/point-cloud-checks"
 [project.optional-dependencies]
 test = [
   "pytest",
+  "pytest-cov",
+  "laspy",
+  "fiona",
+  "GDAL",
+  "affine",
+  "pyproj",
 ]
 
 [build-system]
