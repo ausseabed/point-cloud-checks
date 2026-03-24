@@ -51,11 +51,8 @@ def test_density_check_simple(data_files):
     print(check.failed_nodes)
     print(check.histogram)
 
-    assert all(
-        [
-            check.failed_nodes == 2,
-            check.total_nodes == 12,
-            check.passed,
-            all(check.histogram[i] == val for i, val in enumerate(hist)),
-        ]
-    )
+    assert check.total_nodes == 12
+    assert check.failed_nodes == 2
+    assert check.passed
+    assert check.histogram is not None
+    assert all(check.histogram[i] == val for i, val in enumerate(hist))
