@@ -78,8 +78,7 @@ class LasTestFileBuilder():
         header.y_scale = 1.0
         header.z_scale = 1.0
 
-        las = laspy.create()
-        las.header = header
+        las = laspy.LasData(header)
         las.X = x_np
         las.Y = y_np
         las.Z = z_np
